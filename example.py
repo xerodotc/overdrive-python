@@ -1,7 +1,7 @@
 from overdrive import Overdrive
 
 def locationChangeCallback(addr, location, piece, speed, clockwise):
-    # Print out addr, piece ID, location ID of the vehicle
+    # Print out addr, piece ID, location ID of the vehicle, this print everytime when location changed
     print("Location from " + addr + " : " + "Piece=" + str(piece) + " Location=" + str(location) + " Clockwise=" + str(clockwise))
 
 
