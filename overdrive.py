@@ -199,6 +199,7 @@ class Overdrive:
         """Location change callback wrapper.
 
         Parameters:
+        addr -- MAC address of car
         location -- Received location ID on piece.
         piece -- Received piece ID.
         speed -- Measured speed.
@@ -216,7 +217,11 @@ class Overdrive:
         self._pongCallbackFunc = func
 
     def _pongCallback(self):
-        """Pong callback wrapper."""
+        """Pong callback wrapper.
+        
+        Parameters:
+        addr -- MAC address of car
+        """
         if self._pongCallbackFunc is not None:
             self._pongCallbackFunc(self.addr)
     
@@ -229,7 +234,11 @@ class Overdrive:
         self._transitionCallbackFunc = func
 
     def _transitionCallback(self):
-        """Piece transition callback wrapper."""
+        """Piece transition callback wrapper.
+        
+        Parameters:
+        addr -- MAC address of car
+        """
         if self._transitionCallbackFunc is not None:
             self._transitionCallbackFunc(self.addr)
 
