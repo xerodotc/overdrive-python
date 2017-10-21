@@ -46,5 +46,5 @@ See `overdrive.py` file.
 License
 -------
 
-This project is licensed under Apache License 2.0.
+This project is licensed under MIT license.
 See `LICENSE` file for details.
